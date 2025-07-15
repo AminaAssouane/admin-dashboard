@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 140px 1fr;
+
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #2390cf;
+  color: white;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+  background-color: white; /* light gray */
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: #e2e8f0; /* slightly darker gray */
+  padding: 20px;
+}
