@@ -25,7 +25,8 @@ body {
   padding: 20px;
 
   display: grid;
-  grid-template-rows: 50px auto auto;
+  grid-template-rows: 50px 250px auto;
+  align-items: start;
   gap: 40px;
 }
 
@@ -37,9 +38,10 @@ body {
   font-weight: bold;
 }
 
-.logo img {
+.dashboard-img {
   width: 30px;
   height: 30px;
+  -webkit-filter: invert(100%);
 }
 
 nav ul {
@@ -58,9 +60,10 @@ nav li {
   cursor: pointer;
 }
 
-nav li img {
+.sidebar-img {
   width: 20px;
   height: 20px;
+  -webkit-filter: invert(100%);
 }
 
 /* Header */
@@ -88,13 +91,20 @@ nav li img {
 #search-bar {
   width: 450px;
   border-radius: 99rem;
+  background-color: #e2e8f0;
+  border: none;
+  padding-left: 15px;
 }
 
 .top-right {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.icon img {
+  border-radius: 50%;
 }
 
 /* Bottom bar */
@@ -103,7 +113,7 @@ nav li img {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .bottom-left {
@@ -116,12 +126,22 @@ nav li img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 30px;
+}
+
+button {
+  background-color: #2390cf;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  color: white;
+  border: none;
 }
 
 /* Main content */
 .main-content {
   grid-area: main;
-  background-color: #e2e8f0; /* slightly darker gray */
+  background-color: #e2e8f0;
   padding: 20px 20px 40px 20px;
   z-index: 1;
 
