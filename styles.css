@@ -13,26 +13,125 @@ body {
     "sidebar header"
     "sidebar main";
 
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
 }
 
+/* Sidebar */
 .sidebar {
   grid-area: sidebar;
   background-color: #2390cf;
   color: white;
   padding: 20px;
+
+  display: grid;
+  grid-template-rows: 50px auto 10px auto;
 }
 
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Navs */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+nav li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+nav li img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Spacer fills available space */
+.spacer {
+  height: 100%;
+}
+
+/* Header */
 .header {
   grid-area: header;
   background-color: white; /* light gray */
   padding: 20px;
   border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+/* Top bar */
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
+#search-bar {
+  width: 450px;
+  border-radius: 99rem;
+}
+
+.bell-logo {
+  margin-left: 450px;
+}
+
+/* Bottom bar */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Main content */
 .main-content {
   grid-area: main;
   background-color: #e2e8f0; /* slightly darker gray */
   padding: 20px;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.projects-section {
+  grid-row: 1 / 3;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  height: 250px;
 }
