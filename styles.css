@@ -228,10 +228,27 @@ button {
 }
 
 .trending-container {
-  height: 100%;
-  background-color: white;
+  height: 1fr;
   margin-top: 10px;
+  background-color: white;
   border-radius: 5px;
+}
+
+.trending-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.trending-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.trending-project {
+  color: grey;
 }
 
 /* Pseudo-classes */
