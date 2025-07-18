@@ -25,7 +25,8 @@ body {
   padding: 20px;
 
   display: grid;
-  grid-template-rows: 50px auto 10px auto;
+  grid-template-rows: 50px auto auto;
+  gap: 40px;
 }
 
 .logo {
@@ -60,10 +61,6 @@ nav li {
 nav li img {
   width: 20px;
   height: 20px;
-}
-
-.spacer {
-  height: 100%;
 }
 
 /* Header */
@@ -123,6 +120,10 @@ nav li img {
   margin-right: 20px;
 }
 
+.project-section-heading {
+  font-weight: bold;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -138,11 +139,19 @@ nav li img {
   border-radius: 5px;
 }
 
+.announcements-section-heading {
+  font-weight: bold;
+}
+
 .announcements-container {
   height: 400px;
   background-color: white;
   margin: 10px 0px 10px 0px;
   border-radius: 5px;
+}
+
+.trending-section-heading {
+  font-weight: bold;
 }
 
 .trending-container {
