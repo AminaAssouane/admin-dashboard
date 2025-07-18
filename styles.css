@@ -76,7 +76,13 @@ nav li img {
 .top {
   display: flex;
   justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  justify-content: space-around;
   gap: 10px;
+  align-items: 10px;
 }
 
 #search-bar {
@@ -84,8 +90,11 @@ nav li img {
   border-radius: 99rem;
 }
 
-.bell-logo {
-  margin-left: 450px;
+.top-right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Bottom bar */
@@ -97,10 +106,16 @@ nav li img {
   margin-top: 40px;
 }
 
-.left {
+.bottom-left {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* Main content */
@@ -139,6 +154,11 @@ nav li img {
   border-radius: 5px;
 }
 
+.project-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .announcements-section-heading {
   font-weight: bold;
 }
@@ -159,4 +179,10 @@ nav li img {
   background-color: white;
   margin-top: 10px;
   border-radius: 5px;
+}
+
+/* Pseudo-classes */
+.clickable:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.07);
 }
